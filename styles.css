@@ -1,24 +1,167 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
 }
 
 body {
+    height: 100vh;
     display: flex;
+    flex-direction: column;
+    background: linear-gradient(120deg, #20E679, #F7E63D);
+    justify-content: center;
+    align-items: center;
+}
+
+
+#box-mundial {
+    display: flex;
+    flex-direction: row;
+    justify-content:space-around;
+    height: 250px;
+    width: 90%;
+    background: linear-gradient(120deg, #4e49137e, #0b522b98);
+    align-items: center;
+    border-radius: 8px;
+    box-shadow: 0px, 8px, 10px rgba(5, 5, 15, 0.7);
+    margin: 10px;
+}
+
+#box-mundial #box-cidades {
+    height: 120px;
+    width: 250px;
+    display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
+    color: #FFF;
+    background: rgba(5, 5, 5, 0.9);
+    box-shadow: 0px, 8px, 10px rgba(5, 5, 15, 0.7);
+    border-radius: 7px;
+    letter-spacing: 3px;
+    margin: 20px;
+}
+
+#box-mundial #box-cidades:hover {
+    color: #FFF;
+    background: rgba(56, 56, 56, 0.9);
+
+}
+
+#box-mundial #box-cidades h3 {
+    font-size: 20px;
+    margin: 5px 10px 0px 10px;
+    color: rgb(238, 0, 0);
+}
+
+#box-mundial #box-cidades p {
+    font-size: 17px;
+    
+}
+
+#box-mundial #box-cidades .rel-mundial {
+    font-size: 25px;
+}
+
+#box-mundial #box-cidades button {
+    border: none;
+    background-color: #20E679;
+    padding: 5px 10px;
+    margin: 5px;
+    border-radius: 5px;
+
+}
+
+#box-mundial #box-cidades button:hover {
+    background-color: #19b45f;
+
+}
+
+.boxHora {
+    height: 300px;
+    width: 90%;
+    background: linear-gradient(120deg, #4e49137e, #0b522b98);
+    display: flex;
+    align-items: center;
     flex-direction: column;
-    min-height: 100vh;
-    background-color: rgb(48, 42, 138);
+    justify-content: space-around;
+    border-radius: 8px;
+    box-shadow: 0px, 8px, 10px rgba(5, 5, 15, 0.7);
+}
+
+.boxHora h1 {
+    margin-top: 15px;
+    font-size: 50px;
+    font-weight: bolder;
     color: #FFF;
 }
 
-h2 {
-    font-size: 4rem;
-    letter-spacing: 1px;
+.horaCerta {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 250px;
+    width: 550px;
 }
 
-p {
+.horaCerta div {
+    height: 170px;
+    width: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #FFF;
+    background: rgba(5, 5, 5, 0.9);
+    box-shadow: 0px, 8px, 10px rgba(5, 5, 15, 0.7);
+    border-radius: 7px;
+    letter-spacing: 3px;
+}
+
+.horaCerta span {
+    font-weight: bolder;
+    font-size: 60px;
+}
+
+.horaCerta span.tempo {
+    font-size: 10px;
+}
+
+
+#cronometro {
+    height: 300px;
+    width: 90%;
+    background: linear-gradient(120deg, #4e49137e, #0b522b98);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-around;
+    border-radius: 8px;
+    box-shadow: 0px, 8px, 10px rgba(5, 5, 15, 0.7);
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+#cronometro h2 {
+    font-size: 4rem;
+    letter-spacing: 1px;
+    color: #FFF;
+    font-weight: bolder;
+}
+
+#cronometro div {
+    height: 100px;
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #FFF;
+    background: rgba(5, 5, 5, 0.9);
+    box-shadow: 0px, 8px, 10px rgba(5, 5, 15, 0.7);
+    border-radius: 7px;
+    letter-spacing: 3px;
+}
+
+#cronometro span {
     font-size: 4rem;
 }

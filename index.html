@@ -1,16 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
     <title>Relógio Digital</title>
-</head>
-<body>
-    <h2 id="mensagem"></h2>
-    <p id="relogioDigital"></p>
+  </head>
+  <body>
+    <div id="box-mundial">
+      <div id="box-cidades">
+        <h3>New Yourk</h3>
+        <p>Estados Unidos</p>
+        <span id="newYourk">12:00:00</span>
+        <button>Coparar</button>
+      </div>
+      <div id="box-cidades">
+        <h3>Dubai</h3>
+        <p>Emirados Árabes Unidos</p>
+        <span id="dubai">12:00:00</span>
+        <button>Coparar</button>
+      </div>
+      <div id="box-cidades">
+        <h3>Cancún</h3>
+        <p>México</p>
+        <span id="cancun">12:00:00</span>
+        <button>Coparar</button>
+      </div>
+      <div id="box-cidades">
+        <h3>Lisboa</h3>
+        <p>Portugal</p>
+        <span id="lisboa">12:00:00</span>
+        <button>Coparar</button>
+      </div>
+    </div>
+    <div class="boxHora">
+      <h1>Horário de Brasília</h1>
+      <div class="horaCerta">
+        <div>
+          <span id="horas">00</span>
+          <spam class="tempo">Horas</spam>
+        </div>
+        <div>
+          <span id="minutos">00</span>
+          <spam class="tempo">Minutos</spam>
+        </div>
+        <div>
+          <span id="segundos">00</span>
+          <spam class="tempo">Segundos</spam>
+        </div>
+      </div>
+    </div>
+
+    <div id="cronometro">
+      <h2>Cronômetro</h2>
+      <div>
+        <span>00:00:00</span>
+      </div>
+    </div>
 
     <script src="scripts.js"></script>
-</body>
+  </body>
 </html>
