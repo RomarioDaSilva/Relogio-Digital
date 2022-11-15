@@ -1,0 +1,24 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: rgb(48, 42, 138);
+    color: #FFF;
+}
+
+h2 {
+    font-size: 4rem;
+    letter-spacing: 1px;
+}
+
+p {
+    font-size: 4rem;
+}
