@@ -18,11 +18,35 @@ const relogio = setInterval(function time(){
     if (min < 10) min = '0' + min
     if (seg < 10) seg = '0' + seg
 
-    let newYork = (hr - 2) + ':' + min + ':' + seg;
-    let dubai = (hr + 7) + ':' + min + ':' + seg;
-    let cancun = (hr - 2) + ':' + min + ':' + seg;
-    let lisboa = (hr + 3) + ':' + min + ':' + seg;
+    let hrBrasilia = hr;
 
+        let hrDubai = hrBrasilia + 7;
+        if (hrDubai > 24) {
+            hrDubai  = hrDubai - 24;
+            if ( hrDubai <10) hrDubai = "0" + hrDubai
+        }
+        let dubai = hrDubai + ':' + min + ':' + seg;
+
+        let hrNewYork = hrBrasilia - 2;
+        if (hrNewYork > 24) {
+            hrNewYork  = hrNewYork - 24;
+            if ( hrNewYork <10) hrNewYork = "0" + hrNewYork
+        }
+        let newYork = hrNewYork + ':' + min + ':' + seg;
+
+        let hrCancun = hrBrasilia - 2;
+        if (hrCancun > 24) {
+            hrCancun  = hrCancun - 24;
+            if ( hrCancun <10) hrCancun = "0" + hrCancun
+        }
+        let cancun = hrCancun + ':' + min + ':' + seg;
+
+        let hrLisboa = hrBrasilia + 3;
+        if (hrLisboa > 24) {
+            hrLisboa  = hrLisboa - 24;
+            if ( hrLisboa <10) hrLisboa = "0" + hrLisboa
+        }
+        let lisboa = hrLisboa + ':' + min + ':' + seg;
 
     horas.textContent = hr;
     minutos.textContent = min;
@@ -35,3 +59,4 @@ const relogio = setInterval(function time(){
     
     
 })
+

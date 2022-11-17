@@ -14,34 +14,47 @@ body {
 
 
 #box-mundial {
-    display: flex;
-    flex-direction: row;
-    justify-content:space-around;
-    height: 250px;
+    height: 300px;
     width: 90%;
-    background: linear-gradient(120deg, #4e49137e, #0b522b98);
+    display: flex;
     align-items: center;
+    flex-direction: column;
+    justify-content: space-around;
     border-radius: 8px;
-    box-shadow: 0px, 8px, 10px rgba(5, 5, 15, 0.7);
-    margin: 10px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
 }
 
-#box-mundial #box-cidades {
-    height: 120px;
-    width: 250px;
+#container-cidades {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 250px;
+    width: 550px;
+}
+
+#box-mundial h1 {
+    margin-top: 15px;
+    font-size: 50px;
+    font-weight: bolder;
+    color: #FFF;
+}
+
+#box-mundial #container-cidades #box-cidades {
+    height: 170px;
+    width: 700px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     color: #FFF;
     background: rgba(5, 5, 5, 0.9);
-    box-shadow: 0px, 8px, 10px rgba(5, 5, 15, 0.7);
+    box-shadow: inset 0px, 8px, 10px rgba(5, 5, 15, 0.7);
     border-radius: 7px;
     letter-spacing: 3px;
     margin: 20px;
 }
 
-#box-mundial #box-cidades:hover {
+#box-mundial #container-cidades #box-cidades:hover {
     color: #FFF;
     background: rgba(56, 56, 56, 0.9);
 
@@ -79,13 +92,12 @@ body {
 .boxHora {
     height: 300px;
     width: 90%;
-    background: linear-gradient(120deg, #4e49137e, #0b522b98);
     display: flex;
     align-items: center;
     flex-direction: column;
     justify-content: space-around;
     border-radius: 8px;
-    box-shadow: 0px, 8px, 10px rgba(5, 5, 15, 0.7);
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
 }
 
 .boxHora h1 {
@@ -112,7 +124,7 @@ body {
     justify-content: center;
     color: #FFF;
     background: rgba(5, 5, 5, 0.9);
-    box-shadow: 0px, 8px, 10px rgba(5, 5, 15, 0.7);
+    box-shadow: inset 0px, 8px, 10px rgba(5, 5, 15, 0.7);
     border-radius: 7px;
     letter-spacing: 3px;
 }
@@ -130,13 +142,12 @@ body {
 #cronometro {
     height: 300px;
     width: 90%;
-    background: linear-gradient(120deg, #4e49137e, #0b522b98);
     display: flex;
     align-items: center;
     flex-direction: column;
     justify-content: space-around;
     border-radius: 8px;
-    box-shadow: 0px, 8px, 10px rgba(5, 5, 15, 0.7);
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
     margin-top: 20px;
     margin-bottom: 20px;
 }
@@ -157,9 +168,10 @@ body {
     justify-content: center;
     color: #FFF;
     background: rgba(5, 5, 5, 0.9);
-    box-shadow: 0px, 8px, 10px rgba(5, 5, 15, 0.7);
+    box-shadow: inset 0px, 8px, 10px rgba(5, 5, 15, 0.7);
     border-radius: 7px;
     letter-spacing: 3px;
+    margin-bottom: 10px;
 }
 
 #cronometro span {
