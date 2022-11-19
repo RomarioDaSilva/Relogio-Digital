@@ -54,6 +54,9 @@ const relogio = setInterval(function time() {
   }
   let lisboa = hrLisboa + ":" + min + ":" + seg;
 
+  hh.style.strokeDashoffset = 440 - (440 / 24) * hr;
+  mm.style.strokeDashoffset = 440 - (440 / 60) * min;
+  ss.style.strokeDashoffset = 440 - (440 / 60) * seg;
 
   horas.textContent = hr;
   minutos.textContent = min;
@@ -65,8 +68,7 @@ const relogio = setInterval(function time() {
   horalisboa.textContent = lisboa;
 });
 
-    hh.style.strokeDashoffset = 440 - (440 * hr);
-
+  
 
 var sec=0
 var min=0
