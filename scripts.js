@@ -7,12 +7,18 @@ const horadubai = document.getElementById("dubai");
 const horacancun = document.getElementById("cancun");
 const horalisboa = document.getElementById("lisboa");
 
+const hh = document.getElementById("hh")
+const mm = document.getElementById("mm")
+const ss = document.getElementById("ss")
+
 const relogio = setInterval(function time() {
   let data = new Date();
 
   let hr = data.getHours();
   let min = data.getMinutes();
   let seg = data.getSeconds();
+
+
 
   if (hr < 10) hr = "0" + hr;
   if (min < 10) min = "0" + min;
@@ -48,6 +54,7 @@ const relogio = setInterval(function time() {
   }
   let lisboa = hrLisboa + ":" + min + ":" + seg;
 
+
   horas.textContent = hr;
   minutos.textContent = min;
   segundos.textContent = seg;
@@ -57,6 +64,8 @@ const relogio = setInterval(function time() {
   horacancun.textContent = cancun;
   horalisboa.textContent = lisboa;
 });
+
+    hh.style.strokeDashoffset = 440 - (440 * hr);
 
 
 var sec=0
