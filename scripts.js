@@ -52,11 +52,20 @@ const relogio = setInterval(function time() {
     hrLisboa = hrLisboa - 24;
     if (hrLisboa < 10) hrLisboa = "0" + hrLisboa;
   }
+
   let lisboa = hrLisboa + ":" + min + ":" + seg;
+
+  let hr_dot = document.querySelector('.hr_dot');
+  let min_dot = document.querySelector('.min_dot');
+  let sec_dot = document.querySelector('.sec_dot');
 
   hh.style.strokeDashoffset = 440 - (440 / 24) * hr;
   mm.style.strokeDashoffset = 440 - (440 / 60) * min;
   ss.style.strokeDashoffset = 440 - (440 / 60) * seg;
+
+  hr_dot.style.transform = `rotate(${hr * 30}deg)`;
+  min_dot.style.transform = `rotate(${m * 6}deg)`;
+  sec_dot.style.transform = `rotate(${s * 6}deg)`;
 
   horas.textContent = hr;
   minutos.textContent = min;
