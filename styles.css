@@ -8,7 +8,7 @@ body {
     height: auto;
     display: flex;
     flex-direction: column;
-    background: linear-gradient(120deg, #20E679, #F7E63D);
+    background: linear-gradient(120deg, #16588d, #8b16a8);
     justify-content: center;
     align-items: center;
 }
@@ -22,7 +22,7 @@ body {
     flex-direction: column;
     justify-content: space-around;
     border-radius: 8px;
-    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+    box-shadow: 8px 8px 10px rgba(0, 0, 0, 0.4);
     margin-top: 20px;
 }
 
@@ -49,8 +49,8 @@ body {
     align-items: center;
     justify-content: space-around;
     color: #FFF;
-    background: rgba(5, 5, 5, 0.9);
-    box-shadow: inset 0px, 8px, 10px rgba(5, 5, 15, 0.7);
+    background: rgb(20, 0, 94);
+    box-shadow: 8px 8px 10px rgba(0, 0, 0, 0.4);
     border-radius: 7px;
     margin: 0 10px;
     text-decoration: none;
@@ -70,8 +70,8 @@ body {
 }
 
 #box-cidades:hover::before {
-   transform: scaleX(1);
-   transform-origin: left;
+    transform: scaleX(1);
+    transform-origin: left;
 }
 
 #box-cidades h3 {
@@ -101,7 +101,7 @@ body {
     width: 90%;
     flex-direction: column;
     border-radius: 8px;
-    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+    box-shadow: 8px 8px 10px rgba(0, 0, 0, 0.4);
 }
 
 .boxHora h1 {
@@ -143,13 +143,13 @@ body {
 }
 */
 
-.time{
+.time {
     display: flex;
     gap: 40px;
     color: #FFF;
 }
 
-.time #circle{
+.time #circle {
     position: relative;
     height: 150px;
     width: 150px;
@@ -181,11 +181,14 @@ body {
 }
 
 
-.time span  /* hours*/{
+.time span
+
+/* hours*/
+    {
     position: absolute;
     text-align: center;
     font-weight: 500;
-    font-size: 1.5rem;
+    font-size: 2rem;
 }
 
 .time span .tempo {
@@ -210,7 +213,7 @@ body {
     background: var(--clr);
     border-radius: 50%;
     box-shadow: 0 0 20px var(--clr),
-    0 0 60px var(--clr);
+        0 0 60px var(--clr);
 
 }
 
@@ -224,7 +227,7 @@ body {
     flex-direction: column;
     justify-content: space-around;
     border-radius: 8px;
-    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+    box-shadow: 8px 8px 10px rgba(0, 0, 0, 0.4);
     margin-top: 20px;
     margin-bottom: 20px;
 }
@@ -245,7 +248,7 @@ body {
     justify-content: center;
     color: #FFF;
     background: rgba(5, 5, 5, 0.9);
-    box-shadow: inset 0px, 8px, 10px rgba(5, 5, 15, 0.7);
+    box-shadow: 8px 8px 10px rgba(0, 0, 0, 0.4);
     border-radius: 7px;
     letter-spacing: 3px;
     margin-bottom: 10px;
@@ -264,7 +267,7 @@ body {
     justify-content: space-around;
     color: #FFF;
     background: rgba(5, 5, 5, 0.9);
-    box-shadow: inset 0px, 8px, 10px rgba(5, 5, 15, 0.7);
+    box-shadow: 8px 8px 10px rgba(0, 0, 0, 0.4);
     border-radius: 7px;
     letter-spacing: 3px;
     margin-bottom: 10px;
@@ -307,7 +310,7 @@ body {
     border: none;
     border-radius: 8px;
     background-color: rgb(255, 94, 0);
-    cursor: pointer;    
+    cursor: pointer;
 }
 
 #cronometro #box-botoes .limpar:hover {

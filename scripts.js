@@ -7,9 +7,9 @@ const horadubai = document.getElementById("dubai");
 const horacancun = document.getElementById("cancun");
 const horalisboa = document.getElementById("lisboa");
 
-const hh = document.getElementById("hh")
-const mm = document.getElementById("mm")
-const ss = document.getElementById("ss")
+const hh = document.getElementById("hh");
+const mm = document.getElementById("mm");
+const ss = document.getElementById("ss");
 
 const relogio = setInterval(function time() {
   let data = new Date();
@@ -17,8 +17,6 @@ const relogio = setInterval(function time() {
   let hr = data.getHours();
   let min = data.getMinutes();
   let seg = data.getSeconds();
-
-
 
   if (hr < 10) hr = "0" + hr;
   if (min < 10) min = "0" + min;
@@ -55,17 +53,17 @@ const relogio = setInterval(function time() {
 
   let lisboa = hrLisboa + ":" + min + ":" + seg;
 
-  let hr_dot = document.querySelector('.hr_dot');
+  /* let hr_dot = document.querySelector('.hr_dot');
   let min_dot = document.querySelector('.min_dot');
-  let sec_dot = document.querySelector('.sec_dot');
+  let sec_dot = document.querySelector('.sec_dot');*/
 
   hh.style.strokeDashoffset = 440 - (440 / 24) * hr;
   mm.style.strokeDashoffset = 440 - (440 / 60) * min;
   ss.style.strokeDashoffset = 440 - (440 / 60) * seg;
 
-  hr_dot.style.transform = `rotate(${hr * 30}deg)`;
+  /* hr_dot.style.transform = `rotate(${h * 30}deg)`;
   min_dot.style.transform = `rotate(${m * 6}deg)`;
-  sec_dot.style.transform = `rotate(${s * 6}deg)`;
+  sec_dot.style.transform = `rotate(${s * 6}deg)`;*/
 
   horas.textContent = hr;
   minutos.textContent = min;
@@ -77,51 +75,47 @@ const relogio = setInterval(function time() {
   horalisboa.textContent = lisboa;
 });
 
-  
+var sec = 0;
+var min = 0;
+var hr = 0;
 
-var sec=0
-var min=0
-var hr=0
+var interval;
 
-var interval
+function twoDigits(digit) {
+  if (digit < 10) {
+    return "0" + digit;
+  } else {
+    return digit;
+  }
+}
 
-function twoDigits(digit){
-    if(digit<10){
-        return('0'+digit)
-    }else{
-        return(digit)
+function start() {
+  watch();
+  interval = setInterval(watch, 1000);
+}
+
+function limpar() {
+  clearInterval(interval);
+  document.getElementById("watch").innerText = "00:00:00";
+}
+
+function stop() {
+  clearInterval(interval);
+  sec = 0;
+  min = 0;
+  document.getElementById("watch").innerText;
+}
+
+function watch() {
+  sec++;
+  if (sec == 60) {
+    min++;
+    sec = 0;
+    if (min == 60) {
+      min = 0;
+      hr++;
     }
-}
-
-function start(){
-    watch()
-    interval= setInterval(watch,1000)
-
-
-}
-
-function limpar(){
-    clearInterval(interval)
-    document.getElementById('watch').innerText='00:00:00'
-}
-
-function stop(){
-    clearInterval(interval)
-    sec=0
-    min=0 
-    document.getElementById('watch').innerText
-
-}
-
-function watch(){
-    sec++
-    if(sec==60){
-        min++
-        sec=0
-        if(min==60){
-            min=0
-            hr++
-        }
-    }
-    document.getElementById('watch').innerText=twoDigits(hr)+':'+twoDigits(min)+':'+twoDigits(sec)
+  }
+  document.getElementById("watch").innerText =
+    twoDigits(hr) + ":" + twoDigits(min) + ":" + twoDigits(sec);
 }
